@@ -62,20 +62,20 @@ public class Location {
         }
 
     }
-/*
-    public List<Sightings> getLocationSightings(){
+
+    public List<Sighting> getLocationSightings(){
         try (Connection con=DB.sql2o.open()){
             String sql="SELECT sighting_id FROM locations_sightings WHERE location_id=:location_id";
             List<Integer> sightings_ids=con.createQuery(sql)
                     .addParameter("location_id",this.getId())
                     .executeAndFetch(Integer.class);
-            List<Sightings> sightings=new ArrayList<Sightings>();
+            List<Sighting> sightings=new ArrayList<Sighting>();
 
             for(Integer sighting_id:sightings_ids){
                 String sightingsQuery="SELECT * FROM sightings WHERE id=:sighting_id";
-                Sightings sighting=con.createQuery(sightingsQuery)
+                Sighting sighting=con.createQuery(sightingsQuery)
                         .addParameter("sighting_id",sighting_id)
-                        .executeAndFetchFirst(Sightings.class);
+                        .executeAndFetchFirst(Sighting.class);
                 sightings.add(sighting);
 
             }
@@ -88,7 +88,7 @@ public class Location {
         }
 
     }
-*/
+
 
     @Override
     public boolean equals(Object o) {
