@@ -3,6 +3,7 @@ import org.sql2o.Connection;
 import java.sql.Timestamp;
 import java.util.Date;
 import java.util.List;
+import java.util.Objects;
 
 public class Sighting {
     private int id;
@@ -106,7 +107,21 @@ public class Sighting {
 
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Sighting sighting = (Sighting) o;
+        return id == sighting.id &&
+                location_id == sighting.location_id &&
+                ranger_id == sighting.ranger_id &&
+                animal_id == sighting.animal_id &&
+                Objects.equals(date, sighting.date) &&
+                Objects.equals(time, sighting.time);
+    }
 
-
-
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, location_id, ranger_id, animal_id, date, time);
+    }
 }
