@@ -6,4 +6,6 @@ public class SightingTest {
     @Rule
     public DatabaseRule databaseRule=new DatabaseRule();
 
+
+
 }
