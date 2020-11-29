@@ -5,9 +5,9 @@ import java.util.Objects;
 
 public class Ranger {
     private int id;
-    private String name;
-    private String badge_id ;
-    private String phone_number;
+    public String name;
+    public String badge_id ;
+    public String phone_number;
 
     public Ranger (String name, String badge_id, String phone_number){
         this.name = name;
