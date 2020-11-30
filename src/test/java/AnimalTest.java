@@ -44,20 +44,7 @@ public class AnimalTest {
             testAnimal.save();
         }
     }
-/*
-    @Test
-    public void AnimalCheckIfNameTypeCanNotBeEmpty() {
-        Animal testAnimal=new Animal("Monkey","");
-        if(testAnimal.name.equals("")||testAnimal.type.equals("")||testAnimal.name.equals(null)||testAnimal.type.equals(null)){
-            try{
-                testAnimal.save();
-            }catch (IllegalArgumentException exception){ }
-        }
 
-        assertTrue(Animal.all().get(0).equals(testAnimal));
-    }
-
-*/
    @Test
    public void save_assignsIdToObject() {
         Animal testAnimal=new Animal("Monkey","");

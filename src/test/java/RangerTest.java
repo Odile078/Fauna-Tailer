@@ -84,26 +84,10 @@ public class RangerTest {
         assertTrue(firstRanger.equals(anotherRanger));
     }
 
-    /*
-    @Test
-    public void allSightingsAreReturnedForRanger() {
-        Rangers ranger=setUpNewRanger();
-        try {
-            Locations location=new Locations("Zone A");
-            ranger.save();
-            location.save();
-            Sightings sighting=new Sightings(location.getId(),ranger.getId(),1);
-            Sightings otherSighting=new Sightings(1,ranger.getId(),1);
-            sighting.save();
-            otherSighting.save();
-            assertEquals(ranger.getRangerSightings().get(0),sighting);
-            assertEquals(ranger.getRangerSightings().get(1),otherSighting);
-        }catch (IllegalArgumentException e){
-            System.out.println(e);
-        }
 
-    }
-    */
+
+
+
 
 
 
