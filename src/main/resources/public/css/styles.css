@@ -28,6 +28,10 @@ padding:3px;
 text-decoration:none;
 color:rgb(238, 109, 50);
 }
+.home{
+padding-left:5px;
+padding-right:5px;
+}
 .inline{
 display:inline;
 }
