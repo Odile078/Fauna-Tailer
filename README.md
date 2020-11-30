@@ -20,12 +20,38 @@ This is a Java program that  allows Rangers to track wildlife sightings in the a
 * cd Caesar-Ciphering
 
 * code . or atom . based on the text editor you have.
+* Fork this repo
+* Open Terminal {Ctrl+Alt+T}
+* Navigate to appropriate directory using the cd command : cd FaunaTailer
+* git clone ```https://github.com/Odile078/FAunaTailer.git```
+
+## Database setup
+
+* CREATE DATABASE wildlife_tracker;
+
+* \c wildlife_tracker
+
+* CREATE TABLE animals(id serial PRIMARY KEY,name varchar, type varchar, health varchar, age varchar);
+                
+* CREATE TABLE locations(id serial PRIMARY KEY, name varchar);
+
+* CREATE TABLE rangers(id serial PRIMARY KEY, name varchar,badge_id varchar,phone_number varchar);
+
+* CREATE TABLE sightings(id serial PRIMARY KEY,animal_id int,ranger_id int,Location_id int,time timestamp);
+
+* CREATE TABLE locations_sightings(id serial PRIMARY KEY, location_id int , sighting_id int);
+
+*  CREATE TABLE rangers_sightings(id serial PRIMARY KEY, ranger_id int , sighting_id int);
+
+* CREATE DATABASE wildlife_tracker_test WITH TEMPLATE wildlife_tracker;
+
 
 ## Technologies Used
 
 * Java
 * markdown
 * Handlebars
+* psql
 
 
 ## Contact Information 
