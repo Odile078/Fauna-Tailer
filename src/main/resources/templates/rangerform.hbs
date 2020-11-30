@@ -1,26 +1,38 @@
 {{#partial "content"}}
-    <div class="form">
-        <form action="/create/ranger/new" method="post">
-            <h1>Create Ranger</h1>
-            <hr>
-            <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" class="form-control form-control-lg" id="name" name="name" placeholder="Input Name..." required>
+    <div class="container">
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-md-4 ranger">
+
+                </div>
+                <div class="col-md-6">
+                    <form action="/create/ranger/new" method="post">
+                        <h1>Create Ranger</h1>
+                        <hr>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control form-control-lg" id="name" name="name" placeholder="Input Name..." required>
+                        </div>
+                        <div class="form-group">
+                            <label for="badge">Badge Number</label>
+                            <input type="text" class="form-control form-control-lg" id="badge" name="badge" placeholder="Input Badge Number..."required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="text" class="form-control form-control-lg" id="phone" name="phone" placeholder="Input Phone Number..."
+                                   required>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-success btn-lg"> Register </button>
+                        </div>
+                    </form>
+
+                </div>
             </div>
-            <div class="form-group">
-                <label for="badge">Badge Number</label>
-                <input type="text" class="form-control form-control-lg" id="badge" name="badge" placeholder="Input Badge Number..."required>
-            </div>
-            <div class="form-group">
-                <label for="phone">Phone Number</label>
-                <input type="text" class="form-control form-control-lg" id="phone" name="phone" placeholder="Input Phone Number..."
-                       required>
-            </div>
-            <div class="form-group">
-                <button type="submit" class="btn btn-success btn-lg"> Create </button>
-            </div>
-        </form>
+        </div>
+
     </div>
+
 
 {{/partial}}
 {{> layout.hbs}}

@@ -1,19 +1,45 @@
 
 {{#partial "content"}}
 
-    <div class="title">
-        <h1 class="text display-4" >Welcome to Wildlife Tracker</h1>
-    </div>
-    <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown button
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="/view/rangers">Action</a>
-            <a class="dropdown-item" href="/view/animals">Another action</a>
-            <a class="dropdown-item" href="/view/locations">Something else here</a>
+    <div class="container">
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-md-4">
+                    <li class="sidebar">
+                        <ul><a href="/view/rangers">Rangers</a></ul>
+                        <ul><a href="/view/locations">Locations</a></ul>
+                        <ul><a href="/view/animals">Animals</a></ul>
+                        <ul><a href="/view/sightings">Sghtings</a></ul>
+                    </li>
+                </div>
+                <div class="col-md-6">
+                    <div class="intro">
+                        <h3 class="" >Welcome to Fauna Tailer</h3>
+                        <p> Find out different animals spoted in the forest Douglas Fir.</p>
+                        <h6>You are a ranger? help us protect all our animals by Reporting the ones you see and their location.below </h6>
+
+
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Register what you see
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="/create/ranger">Register the ranger</a>
+                            <a class="dropdown-item" href="/create/location">Register the location</a>
+                            <a class="dropdown-item" href="/create/animal">Register the animal</a>
+                            <a class="dropdown-item" href="/create/sighting">Report sighting</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+
     </div>
+
+
+
 
 {{/partial}}
 
