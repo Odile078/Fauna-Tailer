@@ -47,6 +47,7 @@ public class Sighting {
             return con.createQuery(sql)
                     .executeAndFetch(Sighting.class);
 
+
         }
     }
 
@@ -95,6 +96,7 @@ public class Sighting {
                     .addParameter("ranger_id",this.ranger_id)
                     .addParameter("location_id",this.location_id)
                     .addParameter("time",this.time)
+                    .throwOnMappingFailure(false)
                     .executeUpdate()
                     .getKey();
 
