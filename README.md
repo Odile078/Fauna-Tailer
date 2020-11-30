@@ -4,7 +4,7 @@ This project was developped using Java.
 
 ## Description
 
-This is a Java program that allows you to recruit a team of superheroes and adding your own heroes.
+This is a Java program that  allows Rangers to track wildlife sightings in the area.
 ## Author
  Odile Uwimpuhwe
 

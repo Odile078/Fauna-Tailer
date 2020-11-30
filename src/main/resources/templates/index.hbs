@@ -2,7 +2,7 @@
 {{#partial "content"}}
 
     <div class="container">
-        <div class="jumbotron jumbotron1">
+        <div class="jumbotron jumbotron2 hml">
             <div class="row">
                 <div class="col-md-4">
                     <li class="sidebar">
@@ -21,17 +21,18 @@
 
                     </div>
 
-                    <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Report
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="/create/ranger">Register the ranger</a>
-                            <a class="dropdown-item" href="/create/location">Register the location</a>
-                            <a class="dropdown-item" href="/create/animal">Register the animal</a>
-                            <a class="dropdown-item" href="/create/sighting">Report sighting</a>
-                        </div>
+
+                    <div class="w3-dropdown-hover">
+                    <button class="w3-button w3-black">Report</button>
+                    <div class="w3-dropdown-content w3-bar-block w3-border">
+                        <a href="/create/ranger" class="w3-bar-item w3-button">Register the ranger</a>
+                        <a href="/create/location" class="w3-bar-item w3-button">Register the location</a>
+                        <a href="/create/animal" class="w3-bar-item w3-button">Register the animal</a>
+                        <a href="/create/sighting" class="w3-bar-item w3-button">Report sighting</a>
                     </div>
+                </div>
+
+
                 </div>
             </div>
         </div>
